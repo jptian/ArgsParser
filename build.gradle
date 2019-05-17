@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+    }
+}
+
+
+apply plugin: 'java'
+
+dependencies {
+    //compile fileTree(dir: 'lib', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.6"
+targetCompatibility = "1.6"
+
+
+//sourceSets.main.java.srcDirs = ['../src'] /* 设置 Java 源码所在目录*/
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs('lib') 
+    }
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}
+
+

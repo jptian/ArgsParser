@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
