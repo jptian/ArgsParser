@@ -13,7 +13,7 @@
   SUM= 3
 ``` 
   
-```
+```java
 package cn.jptian.utils.args;
 
 import java.util.ArrayList;
